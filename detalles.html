@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Detalles del Auto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
 
 <div class="detalle-card">
-  <h1 id="nombreAuto"></h1>
-  <h2 id="precioAuto"></h2>
 
-  <div class="acordeon" onclick="toggle(this)">
-    <h3>Kilometraje ▼</h3>
-    <p>45.000 km</p>
-  </div>
+    <img id="imagenAuto" class="detalle-img" src="" alt="Auto">
 
-  <div class="acordeon" onclick="toggle(this)">
-    <h3>Motor ▼</h3>
-    <p>1.8 naftero</p>
-  </div>
+    <h1 id="nombreAuto"></h1>
 
-  <div class="acordeon" onclick="toggle(this)">
-    <h3>Combustible ▼</h3>
-    <p>Nafta</p>
-  </div>
+    <h2 id="precioAuto"></h2>
 
-  <div class="acordeon" onclick="toggle(this)">
-    <h3>Transmisión ▼</h3>
-    <p>Manual</p>
-  </div>
+    <div class="acordeon" onclick="toggle(this)">
+        <h3>Kilometraje ▼</h3>
+        <p id="kmAuto"></p>
+    </div>
 
-  <button>Consultar</button>
+    <div class="acordeon" onclick="toggle(this)">
+        <h3>Motor ▼</h3>
+        <p id="motorAuto"></p>
+    </div>
+
+    <div class="acordeon" onclick="toggle(this)">
+        <h3>Combustible ▼</h3>
+        <p id="combustibleAuto"></p>
+    </div>
+
+    <div class="acordeon" onclick="toggle(this)">
+        <h3>Transmisión ▼</h3>
+        <p id="transmisionAuto"></p>
+    </div>
+
+    <button class="btn-consultar">
+        Consultar
+    </button>
 
 </div>
 
