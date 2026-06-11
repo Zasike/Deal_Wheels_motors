@@ -2,7 +2,7 @@ const autos = [
 
 {
     nombre: "Toyota Corolla 2022",
-    precio: "$27.800",
+    precio: "$20 000 800",
     imagen: "img/toyota.jpg",
     kilometraje: "45.000 km",
     motor: "1.8",
@@ -12,7 +12,7 @@ const autos = [
 
 {
     nombre: "Ford Ranger 2021",
-    precio: "$28.000",
+    precio: "$45 000 000",
     imagen: "img/ford.jpg",
     kilometraje: "60.000 km",
     motor: "3.2",
@@ -22,7 +22,7 @@ const autos = [
 
 {
     nombre: "Peugeot 208 2023",
-    precio: "$19.000",
+    precio: "$19 500 000",
     imagen: "img/peugeot.jpg",
     kilometraje: "12.000 km",
     motor: "1.6",
@@ -32,7 +32,7 @@ const autos = [
 
 {
     nombre: "Chevrolet Tracker 2022",
-    precio: "$23.000",
+    precio: "$23 000 000",
     imagen: "img/chevrolet.jpg",
     kilometraje: "33.000 km",
     motor: "1.2 Turbo",
@@ -42,7 +42,7 @@ const autos = [
 
 {
     nombre: "Fiat Cronos 2022",
-    precio: "$17.500",
+    precio: "$17 250 000",
     imagen: "img/fiat.jpg",
     kilometraje: "40.000 km",
     motor: "1.3",
@@ -52,7 +52,7 @@ const autos = [
 
 {
     nombre: "Toyota Hilux 2018",
-    precio: "$31.000",
+    precio: "$31 700 000",
     imagen: "img/toyotahilux.png",
     kilometraje: "88.000 km",
     motor: "2.8",
@@ -62,7 +62,7 @@ const autos = [
 
 {
     nombre: "Toyota Yaris 2023",
-    precio: "$21.000",
+    precio: "$21 530 000",
     imagen: "img/toyotayaris.png",
     kilometraje: "8.000 km",
     motor: "1.5",
@@ -72,7 +72,7 @@ const autos = [
 
 {
     nombre: "Ford Ka 2020",
-    precio: "$14.500",
+    precio: "$14 500 000",
     imagen: "img/fordka.png",
     kilometraje: "50.000 km",
     motor: "1.5",
@@ -82,7 +82,7 @@ const autos = [
 
 {
     nombre: "Audi Q7 2023",
-    precio: "$85.000",
+    precio: "$85 960 000",
     imagen: "img/audiQ7.png",
     kilometraje: "5.000 km",
     motor: "3.0 Turbo",
@@ -92,7 +92,7 @@ const autos = [
 
 {
     nombre: "BMW 4 Series 2020",
-    precio: "$73.000",
+    precio: "$170 000 000",
     imagen: "img/BMW4series.png",
     kilometraje: "30.000 km",
     motor: "2.0 Turbo",
@@ -102,7 +102,7 @@ const autos = [
 
 {
     nombre: "Mercedes-Benz S 2019",
-    precio: "$95.000",
+    precio: "$950 000 000",
     imagen: "img/MercedesBenzS.png",
     kilometraje: "22.000 km",
     motor: "4.0 V8",
@@ -113,7 +113,7 @@ const autos = [
 ,
 {
     nombre: "Ford Ranger 2018",
-    precio: "$24.000",
+    precio: "$24 500 000",
     imagen: "img/fordranger.png",
     kilometraje: "95.000 km",
     motor: "3.2 Diesel",
@@ -123,7 +123,7 @@ const autos = [
 
 {
     nombre: "Chevrolet Cruze 2018",
-    precio: "$18.500",
+    precio: "$18 500 000",
     imagen: "img/chevroletcruze.png",
     kilometraje: "70.000 km",
     motor: "1.4 Turbo",
@@ -143,7 +143,7 @@ const autos = [
 
 {
     nombre: "Fiat Argo 2018",
-    precio: "$13.000",
+    precio: "$13 120 000",
     imagen: "img/fiatargo.png",
     kilometraje: "84.000 km",
     motor: "1.3",
@@ -153,7 +153,7 @@ const autos = [
 
 {
     nombre: "Fiat Fastback 2025",
-    precio: "$38.000",
+    precio: "$38 700 000",
     imagen: "img/fiatfastback.png",
     kilometraje: "0 km",
     motor: "1.3 Turbo",
@@ -163,7 +163,7 @@ const autos = [
 
 {
     nombre: "Peugeot 208 2019",
-    precio: "$15.500",
+    precio: "$15 500 500",
     imagen: "img/peugeot.jpg",
     kilometraje: "62.000 km",
     motor: "1.6",
@@ -173,7 +173,7 @@ const autos = [
 
 {
     nombre: "Volkswagen Amarok 2023",
-    precio: "$43.000",
+    precio: "$43 000 000",
     imagen: "img/volkswagenamarok.png",
     kilometraje: "11.000 km",
     motor: "3.0 V6",
@@ -183,7 +183,7 @@ const autos = [
 
 {
     nombre: "Volkswagen E-BORA 2021",
-    precio: "$34.000",
+    precio: "$34 600 000",
     imagen: "img/volkswagenebora.jpg",
     kilometraje: "26.000 km",
     motor: "Eléctrico",
@@ -193,7 +193,7 @@ const autos = [
 
 {
     nombre: "Renault Sandero 2018",
-    precio: "$12.500",
+    precio: "$42 500 000",
     imagen: "img/renauldsandero.png",
     kilometraje: "90.000 km",
     motor: "1.6",
@@ -203,7 +203,7 @@ const autos = [
 
 {
     nombre: "Renault Duster 2021",
-    precio: "$26.000",
+    precio: "$26 000 000",
     imagen: "img/renaulduster.png",
     kilometraje: "35.000 km",
     motor: "1.3 Turbo",
@@ -411,5 +411,55 @@ function cambiarIdioma(){
         "Concessionaria Deal Wheels Motor";
 
     }
+
+}
+
+const autoSeleccionado =
+localStorage.getItem("autoSeleccionado");
+
+if(autoSeleccionado){
+
+    const auto =
+    autos.find(a =>
+        a.nombre === autoSeleccionado
+    );
+
+    if(auto){
+
+        const nombre =
+        document.getElementById("nombreAuto");
+
+        if(nombre){
+
+            document.getElementById("nombreAuto").innerText =
+            auto.nombre;
+
+            document.getElementById("precioAuto").innerText =
+            auto.precio;
+
+            document.getElementById("imagenAuto").src =
+            auto.imagen;
+
+            document.getElementById("kmAuto").innerText =
+            auto.kilometraje;
+
+            document.getElementById("motorAuto").innerText =
+            auto.motor;
+
+            document.getElementById("combustibleAuto").innerText =
+            auto.combustible;
+
+            document.getElementById("transmisionAuto").innerText =
+            auto.transmision;
+
+        }
+
+    }
+
+}
+
+function toggle(elemento){
+
+    elemento.classList.toggle("activo");
 
 }
